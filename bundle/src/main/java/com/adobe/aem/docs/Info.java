@@ -2,6 +2,7 @@ package com.adobe.aem.docs;
 
 import com.adobe.cq.sightly.WCMUse;
 
+// Info class
 public class Info extends WCMUse {
     private String title;
     private String description;

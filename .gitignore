@@ -1,13 +1,15 @@
-# Java
-*.class
-*.jar
-
-# Apache FileVault
-*.vlt
-
-# Intellij
-*.idea
+atlassian-ide-plugin.xml
+target
+.idea
+.classpath
+.project
+.settings
+.checkstyle
 *.iml
-
-# Mac OS
-*.DS_Store
+*.ipr
+*.iws
+bin
+.vlt
+.vlt-sync-config.properties
+.vlt-sync.log
+.DS_Store

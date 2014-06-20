@@ -95,6 +95,18 @@
                 <version>4.8.1</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>com.adobe.cq.sightly</groupId>
+                <artifactId>cq-wcm-sightly-extension</artifactId>
+                <version>1.1.18</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.granite</groupId>
+                <artifactId>com.adobe.granite.sightly.engine</artifactId>
+                <version>1.1.52</version>
+                <scope>provided</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -102,7 +114,7 @@
         Inclusion of repositories in POMs is controversial, to say the least.
         It would be best if you proxied the Adobe repository using a Maven
         Repository Manager. Once you do that, remove these sections.
-     -->
+
     <repositories>
         <repository>
             <id>adobe</id>
@@ -119,7 +131,7 @@
             <layout>default</layout>
         </pluginRepository>
     </pluginRepositories>
-
+ -->
     <build>
         <pluginManagement>
             <plugins>
@@ -168,7 +180,7 @@
                     <artifactId>maven-sling-plugin</artifactId>
                     <version>2.1.0</version>
                     <configuration>
-                        <username>${crx.username}</username>
+                        <user>${crx.username}</user>
                         <password>${crx.password}</password>
                     </configuration>
                 </plugin>
@@ -179,7 +191,7 @@
                     <extensions>true</extensions>
                     <configuration>
                         <failOnError>true</failOnError>
-                        <username>${crx.username}</username>
+                        <userId>${crx.username}</userId>
                         <password>${crx.password}</password>
                     </configuration>
                 </plugin>
